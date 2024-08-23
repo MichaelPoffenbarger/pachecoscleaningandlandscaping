@@ -18,7 +18,7 @@ body {
 .navContainer{
     height: 250px;
     width: 100vw;
-    background-color: #ffffff;
+    background-image: url('img/backgroundimage.png');
     display: flex;
     overflow: hidden;
     justify-content: space-between;
@@ -34,18 +34,19 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color:#E7E2DA;
     
 }
 
 .sticky .navbar {
     display: inline-block;
     justify-content: flex-end;
-    
-    width:80%;
-    list-style-type: none;
-    padding-left: 15%;
-    padding-bottom: 20%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .sticky .navBar .ul{
@@ -60,7 +61,7 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     color: #000000;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
     
 }
 
@@ -84,7 +85,7 @@ body {
 #pachecosLogo{
     height: 100%;
     width: 110%;
-    
+    margin-left: 15%;
 }
 
 ul {
@@ -98,8 +99,8 @@ ul {
 li {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #000000;
-    font-family: 'Marcellus SC', serif;
+    color: #ffffff;
+    font-family: 'Bebas Neue', serif;
     
     
 
@@ -107,7 +108,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 
 }
 
@@ -129,14 +130,15 @@ a {
   .slider {
     position: absolute;
     cursor: pointer;
-    padding-left: 8px;
+    padding-left:15%;
     padding-top: 2px;
+    padding-bottom: 2px;
     color: #ffffff;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #235177;
+    background-color: #b50a20;
     transition: .4s;
   }
   
@@ -147,7 +149,7 @@ a {
     width: 26px;
     right: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(75, 58, 58);
     transition: .4s;
   }
   
@@ -195,7 +197,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #235177;
+    background-color: #b50a20;
     transition: .4s;
   }
   
@@ -206,7 +208,7 @@ a {
     width: 26px;
     right: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(75, 58, 58);
     transition: .4s;
   }
   
@@ -231,8 +233,8 @@ a {
     font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
-    font-family: 'Marcellus SC', serif;
-    padding-right: 10px;
+    font-family: 'Bebas Neue', serif;
+    padding-left: 10%;
   }
 
 .hero{
@@ -249,12 +251,22 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-    width: 50%;
+    align-items: start;
+    width: 100%;
     
-    background-image: url('https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/91440600_663888364178234_8307318648637227008_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_ohc=J90nxfKIZTUQ7kNvgFDEE00&_nc_ht=scontent-dfw5-2.xx&cb_e2o_trans=t&oh=00_AYAI6WF01vI1MVOGdSj0Vbkg-LYgy0VHr7mHlcOIPdxTpw&oe=66E2E3DF');
+    background-image: url('img/backgroundimage.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#flower {
+    height: 700px;
+    width: 500px;
+    color: #221919;
+    position: absolute;
+    z-index: 2;
+    top: -5%;
+    right: 10%;
 }
 
 .rightHero{
@@ -272,28 +284,78 @@ a {
 
 .heroP{
     width: 100%;
-    text-align: center;
+    padding-left: 13%;;
     height: 10%;
-    padding-top: 3%;
-    font-size: 2rem;
+    
+    font-size: 4rem;
     font-weight: 500;
     color: #ffffff;
-    font-family: 'Marcellus SC', serif;
-    background-color: rgba(96, 97, 100, 0.5);
+    font-family: 'Bebas Neue', serif;
+    
 }
 
 .heroOffer{
-    font-size: 5.4rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 100;
     color: #ffffff;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Familjen Grotesk', serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(125, 126, 128, 0.5);
+    padding-left: 13%;
+    padding-top: 6%;
+    
+    line-height: 2em;
 }
 
+.italicSpan{
+    font-style: italic;
+    
+}
+
+#landscapeSpan{
+    padding-left: 48px; 
+font-size: 100px;
+display: inline-block;
+color: transparent;
+position: relative;
+background-clip: text;
+-webkit-background-clip: text;
+background-image: url('vid/grass.gif');
+background-repeat: no-repeat;
+animation: watereffect 10s ease-in-out infinite scroll;
+-webkit-text-stroke: 1px #78e656;
+    
+}
+
+#cleaningSpan{
+   padding-left: 40px; 
+    font-size: 100px;
+    display: inline-block;
+    color: transparent;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url('vid/poolgif.gif');
+    background-repeat: repeat-x;
+    animation: watereffect 10s ease-in-out infinite scroll;
+    -webkit-text-stroke: 1px #95E6F9;
+}
+
+@keyframes watereffect{
+    0%{background-position: 0 10px}
+    5%{background-position: 5% 5px}
+    10%{background-position: 10% -10px}
+    15%{background-position: 15% -20px}
+    20%{background-position: 20% -30px}
+    25%{background-position: 25% -40px}
+    30%{background-position: 30% -50px}
+    40%{background-position:35% -55px}
+    50%{background-position:40% -55px}
+    60%{background-position:50% -55px}
+    70%{background-position:60% -55px}
+    80%{background-position:70% -55px}
+    90%{background-position:80% -55px}
+    100%{background-position:90% -55px}
+}
 
 
 .aboutSection{
@@ -331,7 +393,7 @@ a {
     font-size: 3rem;
     font-weight: 500;
     color: #0a0a0a;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
     
 }
 
@@ -407,7 +469,7 @@ a {
     font-size: 3rem;
     font-weight: 500;
     color: #0a0a0a;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
     
 }
 
@@ -419,9 +481,9 @@ a {
     justify-content: space-around;
     align-items: center;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 100;
     color: #0a0a0a;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Familjen Grotesk', serif;
     text-align: center;
     padding: 10px;
     position: absolute;
@@ -448,10 +510,10 @@ a {
     justify-content: start;
     align-items: center;
     padding-left: 5%;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 500;
     color: #f8f8f8;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
 }
 
 .aboutPachecosText{
@@ -462,9 +524,9 @@ a {
     align-items: center;
     padding-left: 5%;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 100;
     color: #ffffff;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Familjen Grotesk', serif;
     animation: appear1 linear;
     animation-timeline: view();
     -webkit-animation-range: entry 0% 30%;
@@ -475,22 +537,22 @@ a {
 .landscapingServices{
     height: 1024px;
     width: 100vw;
-    background-color:#E7E2DA;
+    background-image: url('img/backgroundimage.png');
     display: flex;
     flex-direction: row;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
     
 }
 
 .cleaningServices{
     height: 1024px;
     width: 100vw;
-    background-color:#E7E2DA;
+    background-image: url('img/backgroundimage.png');
     
     display: flex;
     flex-direction: column;
     justify-content: start;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
 }
 
 
@@ -503,7 +565,7 @@ a {
     justify-content: start;
     align-items: center;
     padding-left: 5%;
-    color: #0a0a0a;
+    color: #ffffff;
     font-size: 5rem;
     font-weight: 500;
     
@@ -527,7 +589,7 @@ a {
     align-items: center;
     position: absolute;
     top: 232%;
-    color: #0a0a0a;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
@@ -547,7 +609,7 @@ a {
     color: #221919;
     position: absolute;
     z-index: 2;
-    top: 45%;
+    top: 34%;
     left: 5%;
 }
 
@@ -580,7 +642,7 @@ a {
     color: #221919;
     position: absolute;
     z-index: 2;
-    top: 45%;
+    top: 34%;
     left: 5%;
 }
 
@@ -613,7 +675,7 @@ a {
     color: #221919;
     position: absolute;
     z-index: 2;
-    top: 45%;
+    top: 34%;
     left: 5%;
 }
 
@@ -625,7 +687,7 @@ a {
     align-items: center;
     position: absolute;
     top: 335%;
-    color: #0a0a0a;
+    color: #fafafa;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
@@ -691,21 +753,21 @@ a {
     display: flex;
     
     align-items: center;
-    font-family: 'Marcellus SC', serif;
-    color: #0a0a0a;
+    font-family: 'Familjen Grotesk', serif;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 70%;
 }
 
 .servicesImage{
-    height: 300px;
+    height: 220px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #333;
-    
+    box-shadow: 0 0 30px rgb(223, 221, 221);
+    border-radius: 10%;
 }
 
 .imageContainer{
@@ -790,22 +852,22 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    color: #ffffff;
+    color: #000000;
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: 'Marcellus SC', serif;
-   
-    background-image: radial-gradient(circle, rgb(97, 104, 204), rgb(56, 41, 143));
+    font-family: 'Familjen Grotesk', serif;
+    box-shadow: 0 0 30px rgb(223, 221, 221);
+    background-color:#E7E2DA;
     backdrop-filter: drop-shadow(0 0 10px #ffffff);
 }
 
 
 
 .footerH2{
-    color: #ffffff;
+    color: #000000;
     font-size: 3rem;
     font-weight: 500;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Bebas Neue', serif;
     width: 100%;
     margin-left: 5%;
     margin-top: 0;
@@ -815,7 +877,7 @@ a {
 #emailIcon {
     height: 50px;
     width: 50px;
-    color: #ffffff;
+    color: #000000;
     margin-left: 10%;
     margin-top: 0;
     margin-bottom: 0;
@@ -842,9 +904,9 @@ a {
     padding-bottom: 0;
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Familjen Grotesk', serif;
     background-color: rgba(123, 126, 133, 0.24);
-    color: #ffffff;
+    color: #000000;
 }
 
 .input::after {
@@ -862,9 +924,9 @@ a {
     padding-bottom: 0;
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Familjen Grotesk', serif;
     background-color: rgba(123, 126, 133, 0.24);
-    color: #ffffff;
+    color: #000000;
 }
 
 #submitBtn {
@@ -884,3 +946,370 @@ a {
     border-radius: 5px;
 }
 
+.footerFeatures{
+    height: 250px;
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    left: 45%;
+    top: 4155px;
+
+}
+
+.feature{
+    height: 150px;
+    width: 200px;
+    color: #ffffff;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid #ffffff;
+    font-family: 'Familjen Grotesk', serif;
+    font-size: 1.2rem;
+}
+
+
+
+.footerLinks{
+    height: 100px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 280px;
+    align-items: center;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Marcellus SC', serif;
+}
+
+.footerIcon{
+    height: 50px;
+    width: 50px;
+    color: #000000;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ #strongbowLogo{
+    height: 100px;
+    width: 250px;
+    position: absolute;
+    right: 5%;
+    top: 4440px;
+}
+
+@media screen and (max-width: 340px) {
+    /* Styles for screens smaller than 480px */
+    /* Add your CSS code here */
+    .landscapingServices {
+        flex-direction: column;
+    }
+
+    .cleaningServices {
+        flex-direction: column;
+    }
+
+    .servicesHeader {
+        font-size: 3rem;
+    }
+
+    .lss1,
+    .lss2,
+    .lss3,
+    .css1,
+    .css2,
+    .css3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        left: 0;
+    }
+
+    .servicesP {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .imageContainer {
+        width: 100%;
+        top: 100%;
+        right: 0;
+    }
+
+    .containedImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contactForm {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .footerH2 {
+        font-size: 2rem;
+    }
+
+    .formGroup {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .input {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #message {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #submitBtn {
+        margin-left: 5%;
+    }
+
+    .footerFeatures {
+        width: 90%;
+        left: 5%;
+        top: 100%;
+    }
+
+    .feature {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footerLinks {
+        width: 90%;
+        padding-top: 20px;
+        margin-left: 5%;
+    }
+
+    #strongbowLogo {
+        top: 100%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    /* Add your CSS code here */
+    .landscapingServices {
+        flex-direction: column;
+    }
+
+    .cleaningServices {
+        flex-direction: column;
+    }
+
+    .servicesHeader {
+        font-size: 3rem;
+    }
+
+    .lss1,
+    .lss2,
+    .lss3,
+    .css1,
+    .css2,
+    .css3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        left: 0;
+    }
+
+    .servicesP {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .imageContainer {
+        width: 100%;
+        top: 100%;
+        right: 0;
+    }
+
+    .containedImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contactForm {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .footerH2 {
+        font-size: 2rem;
+    }
+
+    .formGroup {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .input {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #message {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #submitBtn {
+        margin-left: 5%;
+    }
+
+    .footerFeatures {
+        width: 90%;
+        left: 5%;
+        top: 100%;
+    }
+
+    .feature {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footerLinks {
+        width: 90%;
+        padding-top: 20px;
+        margin-left: 5%;
+    }
+
+    #strongbowLogo {
+        top: 100%;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for screens between 769px and 1024px */
+    /* Add your CSS code here */
+    .landscapingServices {
+        flex-direction: row;
+    }
+
+    .cleaningServices {
+        flex-direction: row;
+    }
+
+    .servicesHeader {
+        font-size: 4rem;
+    }
+
+    .lss1,
+    .lss2,
+    .lss3,
+    .css1,
+    .css2,
+    .css3 {
+        width: 30vw;
+        margin-left: 5%;
+        margin-top: 0;
+        left: 0;
+    }
+
+    .servicesP {
+        width: 30vw;
+        margin-top: 0;
+    }
+
+    .imageContainer {
+        width: 30vw;
+        top: 232%;
+        right: 5%;
+    }
+
+    .containedImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        height: 512px;
+    }
+
+    .contactForm {
+        width: 35%;
+        margin-left: 5%;
+    }
+
+    .footerH2 {
+        font-size: 3rem;
+    }
+
+    .formGroup {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    #message {
+        width: 70%;
+        margin-left: 1%;
+    }
+
+    #submitBtn {
+        margin-left: 45%;
+    }
+
+    .footerFeatures {
+        width: 50%;
+        left: 45%;
+        top: 335%;
+    }
+
+    .feature {
+        width: 200px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .footerLinks {
+        width: 40%;
+        padding-top: 280px;
+        margin-left: 30%;
+    }
+
+    #strongbowLogo {
+        top: 4440px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* Styles for screens larger than 1024px */
+    /* Add your CSS code here */
+}
