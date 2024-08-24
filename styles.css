@@ -269,18 +269,7 @@ a {
     right: 10%;
 }
 
-.rightHero{
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 50%;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:url('https://www.thespruce.com/thmb/-6Od6ewV0j7P5-tga6n5XYSpvzc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1327576000-010986211f2f46f28e1a32615da231f8.jpg')
-}
+
 
 .heroP{
     width: 100%;
@@ -319,10 +308,9 @@ color: transparent;
 position: relative;
 background-clip: text;
 -webkit-background-clip: text;
-background-image: url('vid/grass.gif');
+background-image: url('img/grass.jpg');
 background-repeat: no-repeat;
-animation: watereffect 10s ease-in-out infinite scroll;
--webkit-text-stroke: 1px #78e656;
+
     
 }
 
@@ -939,16 +927,16 @@ animation: watereffect 10s ease-in-out infinite scroll;
     padding-bottom: 0;
     font-size: 1.5rem;
     font-weight: 500;
-    font-family: 'Marcellus SC', serif;
-    background-color: #ffffff;
-    color: #0a1442;
+    font-family: 'Bebas Neue', serif;
+    background-color: #b50a20;
+    color: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 5px;
 }
 
 .footerFeatures{
     height: 250px;
-    width:50%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -956,9 +944,9 @@ animation: watereffect 10s ease-in-out infinite scroll;
     color: #000000;
     font-size: 1.1rem;
     font-weight: 500;
-    border: 1px solid #ffffff;
+    
     left: 45%;
-    top: 4155px;
+    top: 4100px;
 
 }
 
@@ -966,17 +954,27 @@ animation: watereffect 10s ease-in-out infinite scroll;
     height: 150px;
     width: 200px;
     color: #ffffff;
-    margin-left: 4%;
+    margin-left: 2%;
     margin-right: 4%;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    border: 1px solid #ffffff;
+    
     font-family: 'Familjen Grotesk', serif;
     font-size: 1.2rem;
 }
 
+.featureImg{
+    height: 150px;
+    width: 200px;
+    color: #ffffff;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 
 .footerLinks{
