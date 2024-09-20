@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pacheco's Cleaning and Landscaping</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/pachecosxparentlogo.png" alt="Pacheco's Logo" style="height:50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#aboutSection">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#landscapingServices">Landscaping Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cleaningServices">Cleaning Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid bg-none text-center py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4">Pristine Landscaping & Spot-Free Cleaning</h1>
+                <p class="lead">Pacheco's Cleaning & Landscaping Service can help you create exceptional outdoor and indoor spaces.</p>
+                <a href="#footer" class="btn btn-primary btn-lg" id="contactBtn">Contact Us</a>
+            </div>
+            <div class="col-md-6">
+                <img src="img/pachecosxparentlogo.png" alt="Flower Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-5" id="aboutSection">
+        <div class="container">
+            <div class="row">
+                <!-- Landscaping Card -->
+                <div class="col-md-6 mb-4">
+                    <h3>Landscaping</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <video class="w-100" controls>
+                        <source src="vid/pachecoscommercial.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- Cleaning Card -->
+                <div class="col-md-6 mb-4">
+                    <h3>Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="https://www.thespruce.com/thmb/Dn2_ykEOe2xAkynQRYI94kxZ5VY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/HoneycombHomeDesign-bfaca14402e74254b7335e42c5ee2139.jpg" alt="Cleaning Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="text-center">
+                <h2>About Pacheco's</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="container-fluid py-5 bg-none">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <!-- Landscaping Services -->
+                <div class="col-md-4 text-center">
+                    <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/125271138_824342831466119_269183402568613356_n.jpg" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4>Landscaping</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/135408259_854892658411136_3164434207946650207_n.jpg" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4>Landscaping</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/134991437_854892715077797_507815464006816292_n.jpg" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4>Landscaping</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <footer class="py-5 bg-none text-white" id="footer">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form action="mailto:mikepoff2013@gmail.com" method="POST" enctype="multipart/form-data" class="mt-4">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+            <div class="mt-4 text-center">
+                <img src="img/pachecosxparentlogo.png" alt="Pacheco's Logo" class="img-fluid">
+                <img src="img/strongbowBwhite.png" alt="Strongbow Media Logo" class="img-fluid">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
