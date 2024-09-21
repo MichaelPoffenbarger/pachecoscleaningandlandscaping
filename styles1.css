@@ -6,6 +6,7 @@
         background-color: #031a58;
         color: white;
         text-align: center;
+        font-family: 'Raleway';
     }
     
     .navbar-toggler {
@@ -13,23 +14,29 @@
          /* Existing code */
         border: none; /* Optional: Remove border */
     }
+
+    
     
     .navbar-toggler .navbar-toggler-icon {
         background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M 5 7 H 25 M 5 15 H 25 M 5 23 H 25" /%3E%3C/svg%3E'); /* Set the lines to white */
         background-size: 30px 30px; /* Adjust size as needed */
     }
     .display-4{
-        
-        font-size: 2.5rem;
+        font-family: 'Raleway';
+        font-size: 2.2rem;
     }
     #contactBtn {
-        background-color: #6B1212; /* A deeper, richer red */
-        border: 2px solid #FFD700; /* A vibrant gold for the border */
-        color: #fff; /* White text for contrast */
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-family: 'Raleway';
+        background-color: #030303; /* A deeper, richer red */
+        color: rgb(153, 132, 14); /* White text for contrast */
         padding: 10px 10px; /* Increased padding for a more substantial look */
         border-radius: 20px; /* A more pronounced border radius for a modern look */
         transition: all 0.3s ease; /* Smooth transition for a dynamic feel */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        /* Gradient border animation */
+        animation: gradient-border 3s infinite;
     }
     #contactBtn:hover {
         background-color: #ffd90000; /* Gold background on hover for a striking effect */
@@ -37,12 +44,28 @@
         transform: translateY(-5px); /* Subtle vertical movement for a dynamic feel */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow for a more pronounced depth */
     }
+    @keyframes gradient-border {
+        0% { box-shadow: 0 0 8px #FFD700; }
+        50% { box-shadow: 0 0 8px #FFD700, 0 0 8px #FFD700; }
+        100% { box-shadow: 0 0 8px #FFD700; }
+    }
+    #heroLogo{
+        width: 85%;
+        height: 85%;
+        animation: spin 200s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
 }
+
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Add your styles here for screens between 601px and 1024px */
     body {
-        background-image: url('img/backgroundimage.png');
+        background-color: #031a58;
         color: white;
     }
     
@@ -72,13 +95,23 @@
         color: #ffffff; /* Red text on hover for contrast */
         transform: translateY(-5px); /* Subtle vertical movement for a dynamic feel */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow for a more pronounced depth */
+    }
+    #heroLogo{
+        width: 85%;
+        height: 85%;
+        animation: spin 200s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 }
 
 @media only screen and (min-width: 1025px) {
     /* Add your styles here for screens greater than 1025px */
     body {
-        background-image: url('img/backgroundimage.png');
+        background-color: #031a58;
         color: white;
     }
     
@@ -96,7 +129,7 @@
 
 
     #contactBtn {
-        background-color: #6B1212; /* A deeper, richer red */
+        background-color: #030303; /* A deeper, richer red */
         border: 2px solid #FFD700; /* A vibrant gold for the border */
         color: #fff; /* White text for contrast */
         padding: 10px 10px; /* Increased padding for a more substantial look */
@@ -110,5 +143,18 @@
         transform: translateY(-5px); /* Subtle vertical movement for a dynamic feel */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow for a more pronounced depth */
     }
+    #heroLogo{
+        width: 85%;
+        height: 85%;
+        animation: spin 200s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
 }
+
+
+
 
