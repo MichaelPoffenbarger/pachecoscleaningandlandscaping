@@ -52,12 +52,20 @@
     #heroLogo{
         width: 85%;
         height: 85%;
-        animation: spin 200s linear infinite;
+        
     }
 
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+    .service-img{
+        height: 200px;
+        width: 80vw;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -99,12 +107,20 @@
     #heroLogo{
         width: 85%;
         height: 85%;
-        animation: spin 200s linear infinite;
+        
     }
 
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+    .service-img{
+        height: 200px;
+        width: 25vw;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -146,12 +162,20 @@
     #heroLogo{
         width: 85%;
         height: 85%;
-        animation: spin 200s linear infinite;
+        
     }
 
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+    .service-img{
+        height: 200px;
+        width: 25vw;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
