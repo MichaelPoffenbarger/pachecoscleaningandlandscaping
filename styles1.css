@@ -1,5 +1,3 @@
-
-
 @media only screen and (max-width: 600px) {
     /* Add your styles here for screens less than 600px */
     body {
@@ -21,17 +19,46 @@
         background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M 5 7 H 25 M 5 15 H 25 M 5 23 H 25" /%3E%3C/svg%3E'); /* Set the lines to white */
         background-size: 30px 30px; /* Adjust size as needed */
     }
+    
     .display-4{
+        font-family: 'Rajdhani';
+        font-size: 2.2rem;
+        font-weight: 800;
+        background-size: cover;
+        
+    }
+    .lead{
         font-family: 'Raleway';
+        font-size: 1rem;
+    }
+    .col-md-6 h3{
+        font-family: 'Rajdhani';
+        font-weight: 800;
         font-size: 2.2rem;
     }
+    .col-md-6 p{
+        font-family: 'Raleway';
+        font-size: 1rem;
+    }
+
+    .container h2{
+        font-family: 'Rajdhani';
+        font-weight: 800;
+        font-size: 2.2rem;
+    }
+
+    .col-md-4 h4 {
+        font-family: 'Rajdhani';
+        font-size: 1.2rem;
+    }
+
     #contactBtn {
         margin-top: 10px;
         margin-bottom: 30px;
-        font-family: 'Raleway';
-        background-color: #030303; /* A deeper, richer red */
-        color: rgb(153, 132, 14); /* White text for contrast */
-        padding: 10px 10px; /* Increased padding for a more substantial look */
+        font-family: 'Rajdhani';
+        background-color: #7c0823; /* A deeper, richer red */
+        color: rgb(255, 255, 255); /* White text for contrast */
+        padding: 5px 10px; /* Increased padding for a more substantial look */
         border-radius: 20px; /* A more pronounced border radius for a modern look */
         transition: all 0.3s ease; /* Smooth transition for a dynamic feel */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -59,16 +86,26 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
+    .col-md-4{
+        padding-bottom: 20px;
+        border: 3px solid #56EEF4;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    
     .service-img{
         height: 200px;
-        width: 80vw;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         object-fit: cover;
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 1px solid #32e232;
+        border-radius: 5px;
     }
 }
-
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Add your styles here for screens between 601px and 1024px */
@@ -178,6 +215,22 @@
         align-items: center;
     }
 }
+
+
+
+
+
+.text-with-background {
+    background-image: url('img/trees.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+
 
 
 
