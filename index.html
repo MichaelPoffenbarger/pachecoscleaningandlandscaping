@@ -2,163 +2,238 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pacheco's Cleaning and Landscaping</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pacheco's Cleaning and Landscaping offers professional cleaning and landscaping services for residential and commercial properties.">
+    <meta name="keywords" content="cleaning services, landscaping services, residential cleaning, commercial cleaning, lawn care, gardening, property maintenance">
+    <meta name="author" content="Pacheco's Cleaning and Landscaping">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="Pacheco's Cleaning and Landscaping">
+    <meta property="og:description" content="Pacheco's Cleaning and Landscaping offers professional cleaning and landscaping services for residential and commercial properties.">
+    <meta property="og:image" content="img/pachecosxparentlogo.png">
+    <meta property="og:url" content="https://pachecoscleaningandlandscaping.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pacheco's Cleaning and Landscaping">
+    <meta name="twitter:description" content="Pacheco's Cleaning and Landscaping offers professional cleaning and landscaping services for residential and commercial properties.">
+    <meta name="twitter:image" content="img/pachecosxparentlogo.png">
+    <meta name="twitter:site" content="@pachecoscleaning">
+    <meta name="twitter:creator" content="@pachecoscleaning">
+    <meta name="facebook:app_id" content="YOUR_APP_ID">
+    <meta name="facebook:admins" content="YOUR_ADMIN_ID">
+    <meta name="msvalidate.01" content="YOUR_BING_VALIDATION_CODE">
+    <meta name="p:domain_verify" content="YOUR_PINTEREST_VERIFICATION_CODE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#7c0823">
+    <link rel="icon" type="image/png" href="img/pachecosxparentlogo.png">
+    <link rel="apple-touch-icon" type="image/png" href="img/pachecosxparentlogo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Fjord+One&family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Meie+Script&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
 </head>
+
+
+
 <body>
-    <header>
-        <div class="navHolder">
-        <div class="navContainer" id="navContainer">
-            <a href="index.html"><img src="img/pachecosxparentlogo.png" alt="Pacheco's Logo" id="pachecosLogo"></a>
-            <nav class="navBar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/pachecosxparentlogo.png" alt="Pacheco's Logo" style="height:75px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#aboutSection">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#servicesSection">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#reviewsSection">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid bg-none text-center py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-6" id="heroDiv">
+                <h1 class="display-4">Pristine
+                    <span class="text-with-background" style="font-size: 2.5rem; "> Landscaping</span> & Spot-Free
+                    <span style="background-image: url('vid/poolgif.gif'); background-size: cover; background-clip: text; color: transparent; font-size: 3.1rem;">Cleaning</span>
+                </h1>
                 
-                <ul class="ul">
-                    <li class="li"><a href="#aboutSection">About Us</a></li>
-                    <li class="li"><a href="#landscapingServices">Landscaping Services</a></li>
-                    <li class="li"><a href="#cleaningServices">Cleaning Services</a></li>
-                    <li class="li"><a href="#footer"><label class="switch">
-                        <input type="link">
-                        <span class="slider round">Contact Us</span>
-                      </label></a></li>
-                </ul>
-            </nav>
+                <p class="lead">Pacheco's Cleaning & Landscaping Service can help you create exceptional outdoor and indoor spaces.</p>
+                <a href="#footer" class="btn btn-primary btn-lg" id="contactBtn">Contact</a>
+            </div>
+            <div class="col-md-6">
+                <img src="img/flowers3transparentstem.png" alt="Pacheco's Logo" class="img-fluid" id="heroLogo">
+                
+            </div>
         </div>
     </div>
-        <div class="hero">
-            <div class="leftHero">
-                <p class="heroP">Interested in <span class="italicSpan">pristine</span><span id="landscapeSpan">Landscaping</span><br>How About a <span class="italicSpan">spot free</span><span id="cleaningSpan">Cleaning</span></p>
-                <p class="heroOffer">Pacheco's Cleaning & Landscaping Service can help you create exceptional outdoor spaces <br>and immaculate indoor spaces.</p>
-                <img src="img/flowers3transparentstem.png" alt="Flower Image" id="flower">
-                
-            </div>
-            
-            
-            <label class="switch1">
-                <a href="#footer">
-                <input type="checkbox">
-                
-                <span class="slider1 round"><span id="heroBtnSpan">Contact Us</span></span>
-              </label></a>
-            
-        </div>
-    </header>
-    <main>
-        <section class="aboutSection" id="aboutSection">
-            <div class="serviceCardLeft">
-                
-                <p class="aboutCardHeader">Landscaping</p>
-                <p class="aboutCardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <video width="100%" height="50%" controls>
-                    <source src="vid/pachecoscommercial.mov" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-            </div>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgary.craig.902%2Fposts%2Fpfbid02oP1RojXm9vWPyVJG3pYF1KTruTGc9YfTEALSxEXCaKJG6qK5HmsNre8E6vRXGxZl&show_text=true&width=500" width="500" height="228" style="border:none;overflow:hidden" scrolling="no" frameborder="1" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="fbReviews"></iframe>
-            
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02NUdCGTpDo1a1JaV8ymPAjURwpLUbQMQR5qZe5Xum7EE6GFnWRcKHCnE53Lhf16p2l%26id%3D100074104684924&show_text=true&width=500" width="500" height="272" style="border:none;overflow:hidden" scrolling="no" frameborder="1" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="fbReviews2"></iframe>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpamela.e.turner.3%2Fposts%2Fpfbid02Zxv6CB6KckFqZzgiRD6XWBi17L7SbJjGcMBX9ce12xzVwh3Apm8pZviiyEEfFFNnl&show_text=true&width=500" width="500" height="166" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="fbReviews1"></iframe>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbethany.holcomb.7%2Fposts%2Fpfbid02PFBGFaSSD9n46G5wtQ68m56Du6v2jdW5oxVrKLuUGVJfay5evzRBxjEq19kTvD4l&show_text=true&width=500" width="500" height="170" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" class="fbReviews3"></iframe>
-            <div class="serviceCardRight">
-                
-                <p class="aboutCardHeader">Cleaning</p>
-                <p class="aboutCardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <img src="https://www.thespruce.com/thmb/Dn2_ykEOe2xAkynQRYI94kxZ5VY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/HoneycombHomeDesign-bfaca14402e74254b7335e42c5ee2139.jpg" alt="Cleaning Image" id="cs1">
-            </div>
-        
-            <div class="aboutTextArea">
-                <p class="aboutPachecosHeader">About Pacheco's</p>
-                <p class="aboutPachecosText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </section>
-        <div class="landscapingServices" id="landscapingServices">
-            <p class="servicesHeader">Landscaping Services</p>
-            <div class="lss1">
-                <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/125271138_824342831466119_269183402568613356_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=lKtOuyNaWx0Q7kNvgHZxxc4&_nc_ht=scontent-dfw5-1.xx&cb_e2o_trans=t&oh=00_AYCpbdgovgJUrrnsnaCW4uJjKM0K4-i3mL7_OX7xirBv_g&oe=66EC036D" alt="Landscaping Image" class="servicesImage">
-                <img src="img/leaves-garden-svgrepo-com.svg" alt="Leaf Icon" class="leafIcon">
-                <p class="servicesP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-            </div>
-            <div class="lss2">
-                <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/135408259_854892658411136_3164434207946650207_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=h3Ly7AmPqqoQ7kNvgGvJ6y1&_nc_ht=scontent-dfw5-2.xx&cb_e2o_trans=t&oh=00_AYB7Opqt4rjbh6iuF6wdGwx9deKUkfnPOeBHqX6KGePJWQ&oe=66EC0F8A" alt="Landscaping Image" class="servicesImage">
-                <img src="img/trowel-svgrepo-com.svg" alt="Trowel Icon" class="trowelIcon">
-                <p class="servicesP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-            </div>
-            <div class="lss3">
-                <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/134991437_854892715077797_507815464006816292_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Gs9cJzWy4-cQ7kNvgHLS5SJ&_nc_ht=scontent-dfw5-1.xx&cb_e2o_trans=t&oh=00_AYALOSAoJXUlw6zcRHtjcBABbQPzbYHUicO-zyXHzwVCuQ&oe=66EC1C97" alt="Landscaping Image" class="servicesImage">
-                <img src="img/picket-garden-svgrepo-com.svg" alt="Picket Icon" class="picketIcon">
-                <p class="servicesP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-            </div>
-        </div>
 
-        <div class="cleaningServices" id="cleaningServices">
-            <p class="servicesHeader">Cleaning Services</p>
-            <div class="css1">
-                <img src="https://images.pexels.com/photos/48889/cleaning-washing-cleanup-the-ilo-48889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscaping Image" class="servicesImage">
-                <p class="servicesP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+    <!-- About Section -->
+    <section class="py-5" id="aboutSection">
+        <div class="container">
+            <div class="row">
+                <!-- Landscaping Card -->
+                <div class="col-md-6 mb-4">
+                    <h3 style="color: #60df2e; font-family: 'Rajdhani', sans-serif; font-size: 2.5rem;">Landscaping</h3>
+                    <p>Transform your yard with expert care from Pacheco's Landscaping team!</p>
+                    <video class="w-100" controls>
+                        <source src="vid/pachecoscommercial.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- Cleaning Card -->
+                <div class="col-md-6 mb-4">
+                    <h3 style="color: #2ea7df; font-family: 'Rajdhani', sans-serif; font-size:2.5rem;">Cleaning</h3>
+                    <p>Spotless spaces guaranteed with Pacheco's professional cleaning!</p>
+                    <img src="https://www.thespruce.com/thmb/Dn2_ykEOe2xAkynQRYI94kxZ5VY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/HoneycombHomeDesign-bfaca14402e74254b7335e42c5ee2139.jpg" alt="Cleaning Image" class="img-fluid">
+                </div>
             </div>
-            <div class="css2">
-                <img src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscaping Image" class="servicesImage">
-                <p class="servicesP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+            <div class="col-md-6 col-lg-12 text-center">
+                <h3 style="color:#e01249; font-family: 'Rajdhani', sans-serif; font-size: 2.5rem;" id="aboutH3">About Pacheco's</h3>
+                <p>At Pacheco's Cleaning & Landscaping, we pride ourselves on delivering first-class cleaning and landscaping services that transform both indoor and outdoor spaces. Whether you need your home or business tidied up or want to enhance the beauty of your yard, our dedicated team ensures meticulous care and attention to detail. Let us handle the hard work, so you can enjoy the results!</p>
             </div>
-            <div class="css3">
-                <img src="https://images.pexels.com/photos/4099467/pexels-photo-4099467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscaping Image" class="servicesImage">
-                <p class="servicesP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+
+        </div>
+    </section>
+
+    <!-- Services Section --> 
+    <div class="container-fluid bg-none" style="width: 100%;"" id ="servicesSection">
+        <h2 class="text-center mb-5" style="color: #e01249; font-family: 'Rajdhani', sans-serif; font-size: 2.5rem; font-weight: 700;" id="servicesH2">Our Services</h2>
+        <div class="container">
+            
+            <div class="row" id="row1" style="justify-content: center;">
+                <!-- Landscaping Services --> 
+                
+                <div class="col-md-5 col-sm-10 col-lg-3 text-center p-0">
+                    
+                    <img class="service-img" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/42314538_343643162869424_8845574520086462464_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SwlMUlDeEBYQ7kNvgFbAtdD&_nc_ht=scontent-dfw5-2.xx&_nc_gid=AcmnWwtIKkQXcct1d2HqHqf&oh=00_AYDBdsVouIRx8hkYf32YpC2NMZwST9XxAPOw46Xv4i-bkA&oe=6718F97E" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4 style="color: #32E875">Lawn Care and Maintenance</h4>
+                    <p>Our standard lawn care service includes mowing, trimming, and edging to keep your lawn looking its best.</p>
+                </div>
+            
+                <div class="col-md-5 col-sm-10 col-lg-3 text-center p-0">
+                    <img class="service-img" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/135408259_854892658411136_3164434207946650207_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ShDjYh9w6yIQ7kNvgFnAvjt&_nc_ht=scontent-dfw5-2.xx&_nc_gid=A2g3kLmfrPHqVN-L7ggSxtM&oh=00_AYDScHZQx6BI5THgR0v5Fbn7TqpN65PbEjgCVVoWhQ6y7g&oe=6718E28A" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4 style="color: #32E875">Landscape Design and Installation</h4>
+                    <p>Transform your outdoor space with our expert landscape design and installation services.</p>
+                </div>
+                <div class="col-md-5 col-sm-10 col-lg-3 text-center p-0">
+                    <img class="service-img" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/79251886_590446354855769_8420258936854151168_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=yOGrhO7bKFgQ7kNvgFkZgOZ&_nc_ht=scontent-dfw5-2.xx&_nc_gid=AdjtYaboxkbAJ7oGJxxQSsu&oh=00_AYA-07XO7T7pmPZi76jI_tAeCddy7MHtOYH6InMICRRFuw&oe=6718F43E" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4 style="color: #32E875">Irrigation Systems</h4>
+                    <p>Keep your lawn healthy and green with our expertly installed sprinkler systems.</p>
+                </div>
+                <div class="col-md-5 col-sm-10 col-lg-3 text-center p-0">
+                    <img class="service-img" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/456448374_1646692545897806_7455506984978204489_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1h7-a8pq1SIQ7kNvgF_YB2G&_nc_ht=scontent-dfw5-1.xx&oh=00_AYDqK5jQ5-0bVs3NJDcUE4iR-bWTDjFEZj0D9AZuOKWgCg&oe=66F76686" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4 style="color: #56EEF4;">Standard House Cleaning</h4>
+                    <p>Our Standard House Cleaning service ensures a thorough and meticulous cleaning of your space.</p>
+                </div>
+                <div class="col-md-5 col-sm-10 col-lg-3 text-center p-0">
+                    <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/135408259_854892658411136_3164434207946650207_n.jpg" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4 style="color: #56EEF4;">Deep Cleaning</h4>
+                    <p>Our Deep Cleaning service ensures a thorough and meticulous cleaning of your space.</p>
+                </div>
+                <div class="col-md-5 col-sm-10 col-lg-3 text-center p-0">
+                    <img class="service-img" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/456480070_1646692669231127_2774765485603749444_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WacOtZU86CQQ7kNvgHhf3tk&_nc_ht=scontent-dfw5-2.xx&_nc_gid=AmKumbuUYutA9RVL9Ds1keF&oh=00_AYBHQTbJn65DKnLeGbgxuyFN0i07NDn12ECy_BsVOWDwsQ&oe=66F7571A" alt="Landscaping Image" class="img-fluid mb-3">
+                    <h4 style="color: #56EEF4;">Move-In/Move-Out Cleaning</h4>
+                    <p>Our Move-In/Move-Out Cleaning service ensures a smooth transition with a spotless space.</p>
+                </div>
             </div>
         </div>
-        <div class="imageContainer">
-            <card class="containedImage"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/294614893_530652368800365_1476872087835178766_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vdvHJsZn81kQ7kNvgGrnT6U&_nc_ht=scontent-dfw5-1.xx&cb_e2o_trans=t&oh=00_AYAvvWtPhv-uWgUxMHybItGuF6aOCX6wCNc2O_p_erYE7A&oe=66CA946A" id="img1"></card>
-            <card class="containedImage"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/120367124_790403674860035_329617378237086833_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=4_tvoOGF3GoQ7kNvgGhZI19&_nc_ht=scontent-dfw5-1.xx&cb_e2o_trans=t&oh=00_AYDVMUSBX7gMRtSaCQJe-quzG9dHlCd9xH38dwbT9muRSA&oe=66EC253F" id="img2"></card>
-            <card class="containedImage"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/118703694_767201077180295_771761878730507258_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=TJjOtdKT7fUQ7kNvgG7RbL5&_nc_ht=scontent-dfw5-1.xx&cb_e2o_trans=t&oh=00_AYDn86HYsHhMj7XCOuBS_xR0R6Qr426Ted1nA0Ep5ECLyg&oe=66EC4B95" id="img3"></card>
-            <card class="containedImage"><img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg" id="img4"></card>
-            <card class="containedImage"><img src="https://images.pexels.com/photos/4469186/pexels-photo-4469186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="img5"></card>
-            
-            
+        
+    </div>
+    <section class="py-5" id="reviewsSection">
+        <div class="container-fluid">
+            <h2 class="text-center" style="font-family: 'Rajdhani', sans-serif; font-size: 4rem; color: #e01249; font-weight: 700;">Reviews</h2>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="img/pachecosxparentlogo.png" alt="Pacheco's Logo" class="img-fluid">
+                    <div class="row pl-3">
+                        <div class="col-sm-12 col-md-6 col-lg-4 pb-5 reviewDiv">
+                            <h4 style="text-align: left; font-family: 'Tangerine', cursive; font-size: 3rem;">Jaclyn M.</h2>
+                            <p style="text-align: left; width: 100%;">"Pacheco’s landscaping did a wonderful job! Highly recommend. My front and back lawn look great. Emma was easy to communicate with and very professional."</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 pb-5 reviewDiv">
+                            <h4 style="text-align: left; font-family: 'Tangerine', cursive; font-size: 3rem;">Pamela E.</h2>
+                            <p style="text-align: left;">"They did a great job for a fair price."</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 pb-5 reviewDiv">
+                            <h4 style="text-align: left; font-family: 'Tangerine', cursive; font-size: 3rem;">Gary C.</h2>
+                            <p style="text-align: left; width: 100%;">"Emma and her guys came out today and laid a couple pallets of sod and trimmed some trees. Arrived ready to work. Did an amazing job. When they left everything was cleaned up as if they had never been there. Meticulously put down sod.  Give this locally owned and operated company a shot. Emma will win you over with her kindness and job performance. Thanks Emma!!"</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 pb-5 reviewDiv">
+                            <h4 style="text-align: left; font-family: 'Tangerine', cursive; font-size: 3rem;">Lexa H.</h2>
+                            <p style="text-align: left; width: 100%;">"Emma and her team have been taking care of our yard for years. From everything to mowing, edging, removing shrubs, cleaning out the flower beds, etc. This year we moved into a new house with lots of big oak trees, so they did our leaf clean up! Over 30 bags!! And they hauled them all off!! 
+                                They are very reliable, but if something comes up or another job takes too long.. she will always let me know the next available day they can make it. We love Emma and her family!"</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 pb-5 reviewDiv">
+                            <h4 style="text-align: left; font-family: 'Tangerine', cursive; font-size: 3rem;">Amanda S.</h2>
+                            <p style="text-align: left; width: 100%;">"Emma and Pacheco’s Cleaning and Landscaping did an amazing job with our gardens and landscaping! We recently moved to NRH and our yard really needed some work. Emma was quick to respond and came of the same day to provide an estimate. She was upfront and honest about the work we could have done right now and what we could afford to wait to have done in the spring. We are thrilled with the work they did and would highly recommend Pacheco’s Cleaning and Landscaping to anyone looking to improve their property’s curb appeal."</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 pb-5 reviewDiv">
+                            <h4 style="text-align: left; font-family: 'Tangerine', cursive; font-size: 3rem;">Nanayetta S.</h2>
+                            <p style="text-align: left; width: 100%;">"A co worker recommended Pacheco's Cleaning and Landscaping to me. They were punctual and arrived on time. My yard looked like it went through a total transformation with their hard work. I will definitely be using them again. Five stars for me."</p>
+                        </div>
+                </div>
+            </div>
         </div>
-    </main>
-    <footer class="footer" id="footer">
-        <form class="contactForm" action="mailto:mikepoff2013@gmail.com" method="POST" enctype="multipart/form-data" >
-            <h2 class="footerH2">Contact Form<img src="img/contact-email-mail-svgrepo-com.svg" alt="Email Icon" id="emailIcon"></h2>
-            
-            <div class="formGroup">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required class="input">
+    </section>
+
+
+    <!-- Contact Form Section -->
+    <footer class="py-5 bg-none text-white" id="footer">
+        <div class="container">
+            <h2 class="text-center" style="color: #c90835;">Contact Us</h2>
+            <form action="mailto:mikepoff2013@gmail.com" method="POST" enctype="multipart/form-data" class="mt-4">
+                <div class="form-group text-left">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required style="background: none; border: none; border-bottom: 1px solid #B24C63; border-radius: 0; color: white;">
+                </div>
+                <div class="form-group text-left">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required style="background: none; border: none; border-bottom: 1px solid #B24C63; border-radius: 0; color: white;">
+                </div>
+                <div class="form-group text-left">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required style="background: none; border: none; border-bottom: 1px solid #B24C63; border-radius: 0; color: white;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" style="background-color: #c90835; border-color: #B24C63;">Submit</button>
+            </form>
+            <div class="mt-4 text-center">
+                <img src="img/pachecosxparentlogo.png" alt="Pacheco's Logo" class="img-fluid col-sm-4 col-md-6 col-lg-4">
+                <a href="https://strongbow.media/"><img src="img/strongbowBwhite.png" alt="Strongbow Media Logo" class="img-fluid col-sm-4 col-md-6 col-lg-4"></a>
             </div>
-            <div class="formGroup">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required class="input">
-            </div>
-            <div class="formGroup">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" id="submitBtn">Submit</button>
-        </form>
-        <img src="img/strongbowmedia222222.png" alt="Strongbow Media Logo" id="strongbowLogo">
-        <div class="footerFeatures">
-            <div class="feature"><a target="_blank" href="https://savetarrantwater.com/comprehensive-guide-to-north-texas-lawn-care/"><img class="featureImg" src="https://savetarrantwater.com/wp-content/uploads/2021/08/Lawn-install-768x432.png">Comprehensive Guide to North Texas Lawn Care</a></div>
-            <div class="feature"><a target="_blank" href="https://www.calloways.com/blog/texas-lawn-care-healthy/"><img class="featureImg" src="https://cdn-hoopp.nitrocdn.com/OMnSFqVhtDIcNWNfcKmgelEzSPCXBQyt/assets/images/optimized/rev-bab0f1f/www.calloways.com/wp-content/uploads/feature-LAWNCARE.jpg">Texas Lawn Care: How to Have a Healthy Yard</a></div>
-            <div class="feature"><a target="_blank" href="https://www.goodhousekeeping.com/home/cleaning/g5115/best-cleaning-products/"><img class="featureImg" src="https://hips.hearstapps.com/hmg-prod/images/190419-cleaning-supplies-1555622121.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*">The Best Cleaning Products for Every Kind of Mess, According to Cleaning Experts</a></div>
-            <div class="feature"><a target="_blank" href="https://www.dfwfavorites.com/listing/landscaping"><img class="featureImg" src="https://www.dfwfavorites.com/media/cache/small/custom/domain_43/image_files/sitemgr_photo_1799.webp">2024: Silver Best Landscaping</a></div>
         </div>
-        <div class="footerLinks">
-            <a href="https://www.facebook.com/p.cleaninglandscaping" target="_blank"><img src="img/facebook-svgrepo-com.svg" alt="Facebook Icon" class="footerIcon"></a>
-            <a href="https://www.instagram.com/pachecoscleaningandlandscaping/" target="_blank"><img src="img/instagram-svgrepo-com.svg" alt="Instagram Icon" class="footerIcon"></a>
-            <a href="https://www.linkedin.com/in/michael-poff-7b1b3b1b1/" target="_blank"><img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn Icon" class="footerIcon"></a>
+        <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <h3 class="text-white">Follow Us</h3>
+                <div class="social-links row">
+                    <a href="https://www.facebook.com/p.cleaninglandscaping/" target="_blank" class="col"><i class="fab fa-facebook-f"><img src="img/facebook-svgrepo-com.svg" alt="Facebook" class="img-fluid" style="width: 50px; height: 50px;"></i></a>
+                    <a href="https://twitter.com/pachecosxparent" target="_blank" class="col"><i class="fab fa-twitter"><img src="img/linkedin-svgrepo-com.svg" alt="LinkedIn" class="img-fluid" style="width: 50px; height: 50px;"></i></a>
+                    <a href="https://www.instagram.com/pachecosxparent/" target="_blank" class="col"><i class="fab fa-instagram"><img src="img/instagram-svgrepo-com.svg" alt="Instagram" class="img-fluid" style="width: 50px; height: 50px;"></i></a>
+                </div>
+            </div>
+        </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
