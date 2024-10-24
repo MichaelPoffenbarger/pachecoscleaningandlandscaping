@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenClean Pro - Cleaning and Landscaping Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .hero {
+            background-image: url('img/landscaping1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 55vh;
+        }
+        .service-item, .faq-item {
+            transition: all 0.3s ease;
+        }
+        .service-item:hover, .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-icon, .faq-icon {
+            transition: all 0.3s ease;
+        }
+        .service-item:hover .service-icon, .faq-item:hover .faq-icon {
+            transform: scale(1.1);
+        }
+        .service-content, .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        .service-content.active, .faq-content.active {
+            max-height: 1000px;
+        }
+        .review-scroll {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-green-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">GreenClean Pro</a>
+            <ul class="flex space-x-4">
+                <li><a href="#services" class="hover:text-green-200">Services</a></li>
+                <li><a href="#reviews" class="hover:text-green-200">Reviews</a></li>
+                <li><a href="#faq" class="hover:text-green-200">FAQ</a></li>
+                <li><a href="#contact" class="hover:text-green-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Transform Your Space with GreenClean Pro</h1>
+            <p class="text-xl mb-8">Professional Cleaning and Landscaping Services</p>
+            <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">Get a Free Quote</a>
+        </div>
+
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+            <div class="space-y-4">
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3 service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Lawn Care Services</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="service-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Comprehensive Care</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Weekly or bi-weekly mowing</li>
+                                    <li>Edging and trimming</li>
+                                    <li>Fertilization and weed control</li>
+                                    <li>Seasonal clean-ups</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Additional Services</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Aeration and overseeding</li>
+                                    <li>Pest control</li>
+                                    <li>Lawn renovation</li>
+                                    <li>Soil testing and pH balancing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3 service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Landscaping Design</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="service-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Design Services</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Custom landscape planning</li>
+                                    <li>3D visualization</li>
+                                    <li>Hardscape design (patios, walkways)</li>
+                                    <li>Water feature integration</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Implementation</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Plant selection and installation</li>
+                                    <li>Soil preparation and grading</li>
+                                    <li>Lighting design and installation</li>
+                                    <li>Ongoing maintenance plans</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3 service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Irrigation System Installation</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="service-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">System Design</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Custom irrigation planning</li>
+                                    <li>Water-efficient solutions</li>
+                                    <li>Zoning for different plant needs</li>
+                                    <li>Smart controller integration</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Installation & Maintenance</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Professional installation</li>
+                                    <li>System testing and calibration</li>
+                                    <li>Seasonal maintenance and winterization</li>
+                                    <li>Repair and upgrade services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3 service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Irrigation System Installation</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="service-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">System Design</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Custom irrigation planning</li>
+                                    <li>Water-efficient solutions</li>
+                                    <li>Zoning for different plant needs</li>
+                                    <li>Smart controller integration</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Installation & Maintenance</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Professional installation</li>
+                                    <li>System testing and calibration</li>
+                                    <li>Seasonal maintenance and winterization</li>
+                                    <li>Repair and upgrade services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3 service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Irrigation System Installation</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="service-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">System Design</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Custom irrigation planning</li>
+                                    <li>Water-efficient solutions</li>
+                                    <li>Zoning for different plant needs</li>
+                                    <li>Smart controller integration</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Installation & Maintenance</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Professional installation</li>
+                                    <li>System testing and calibration</li>
+                                    <li>Seasonal maintenance and winterization</li>
+                                    <li>Repair and upgrade services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3 service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Irrigation System Installation</h3>
+                        </div>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="service-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">System Design</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Custom irrigation planning</li>
+                                    <li>Water-efficient solutions</li>
+                                    <li>Zoning for different plant needs</li>
+                                    <li>Smart controller integration</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Installation & Maintenance</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Professional installation</li>
+                                    <li>System testing and calibration</li>
+                                    <li>Seasonal maintenance and winterization</li>
+                                    <li>Repair and upgrade services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional service items... -->
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+            <div class="space-y-4">
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Lawn Care Services</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-content hidden p-4 bg-green-50">
+                        <p>Our comprehensive lawn care services include mowing, edging, fertilization, weed control, and seasonal clean-ups to keep your lawn lush and healthy year-round.</p>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Landscaping Design</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-content hidden p-4 bg-green-50">
+                        <p>Our expert landscapers create beautiful, functional outdoor spaces tailored to your preferences. From garden layouts to hardscaping, we bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Irrigation System Installation</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-content hidden p-4 bg-green-50">
+                        <p>We design and install efficient irrigation systems to keep your landscape hydrated and thriving, saving you time and conserving water.</p>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Home Cleaning Services</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-content hidden p-4 bg-green-50">
+                        <p>Our thorough home cleaning services cover every corner of your living space, ensuring a spotless and hygienic environment for you and your family.</p>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Steam Cleaning Services</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-content hidden p-4 bg-green-50">
+                        <p>Our steam cleaning services deep clean carpets, upholstery, and hard surfaces, removing tough stains and allergens for a fresher, healthier home.</p>
+                    </div>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer service-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Move In/Move Out Cleaning</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="service-content hidden p-4 bg-green-50">
+                        <p>We offer comprehensive move in/move out cleaning services to ensure your new space is pristine or your old space is left in perfect condition for the next occupants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="review-scroll bg-gray-100 p-4 rounded-lg">
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold">John D.</h4>
+                            <p class="text-yellow-500">★★★★★</p>
+                            <p>GreenClean Pro transformed our backyard into a beautiful oasis. Their landscaping team is truly talented!</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold">Sarah M.</h4>
+                            <p class="text-yellow-500">★★★★★</p>
+                            <p>I'm amazed at how thorough their home cleaning service is. My house has never looked better!</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold">Mike R.</h4>
+                            <p class="text-yellow-500">★★★★☆</p>
+                            <p>Great lawn care service. They're always on time and do a fantastic job keeping our yard looking pristine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Leave a Review</h3>
+                    <form id="reviewForm" class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name:</label>
+                            <input type="text" id="name" name="name" required class="w-full p-2 border rounded">
+                        </div>
+                        <div>
+                            <label for="rating" class="block mb-1">Rating:</label>
+                            <select id="rating" name="rating" required class="w-full p-2 border rounded">
+                                <option value="5">★★★★★</option>
+                                <option value="4">★★★★☆</option>
+                                <option value="3">★★★☆☆</option>
+                                <option value="2">★★☆☆☆</option>
+                                <option value="1">★☆☆☆☆</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="review" class="block mb-1">Review:</label>
+                            <textarea id="review" name="review" required class="w-full p-2 border rounded" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 faq-icon text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">How often should I have my lawn mowed?</h3>
+                        </div>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Mowing Frequency</h4>
+                                <p>The frequency of lawn mowing depends on several factors:</p>
+                                <ul class="list-disc list-inside space-y-1 mt-2">
+                                    <li>Grass type (cool-season vs. warm-season)</li>
+                                    <li>Growing season (spring/summer vs. fall/winter)</li>
+                                    <li>Rainfall and irrigation</li>
+                                    <li>Desired lawn appearance</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">General Guidelines</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Growing season: Once a week</li>
+                                    <li>Peak growing periods: Twice a week</li>
+                                    <li>Dormant seasons: Every 2-3 weeks</li>
+                                    <li>Follow the "one-third rule": Never remove more than 1/3 of the grass blade length in a single mowing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 faq-icon text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">What's included in a standard home cleaning service?</h3>
+                        </div>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Living Areas</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Dusting all surfaces</li>
+                                    <li>Vacuuming carpets and  rugs</li>
+                                    <li>Mopping hard floors</li>
+                                    <li>Cleaning mirrors and glass surfaces</li>
+                                    <li>Emptying trash bins</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Kitchen and Bathrooms</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Sanitizing countertops and sinks</li>
+                                    <li>Cleaning appliance exteriors</li>
+                                    <li>Scrubbing toilets, tubs, and showers</li>
+                                    <li>Wiping down cabinets and fixtures</li>
+                                    <li>Cleaning inside microwave</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden"></div>
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 faq-icon text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">How long does a landscaping design project typically take?</h3>
+                        </div>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Living Areas</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Dusting all surfaces</li>
+                                    <li>Vacuuming carpets and  rugs</li>
+                                    <li>Mopping hard floors</li>
+                                    <li>Cleaning mirrors and glass surfaces</li>
+                                    <li>Emptying trash bins</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Kitchen and Bathrooms</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Sanitizing countertops and sinks</li>
+                                    <li>Cleaning appliance exteriors</li>
+                                    <li>Scrubbing toilets, tubs, and showers</li>
+                                    <li>Wiping down cabinets and fixtures</li>
+                                    <li>Cleaning inside microwave</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden"></div>
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 faq-icon text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">What's included in a standard home cleaning service?</h3>
+                        </div>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-content bg-green-50">
+                        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Living Areas</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Dusting all surfaces</li>
+                                    <li>Vacuuming carpets and  rugs</li>
+                                    <li>Mopping hard floors</li>
+                                    <li>Cleaning mirrors and glass surfaces</li>
+                                    <li>Emptying trash bins</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Kitchen and Bathrooms</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Sanitizing countertops and sinks</li>
+                                    <li>Cleaning appliance exteriors</li>
+                                    <li>Scrubbing toilets, tubs, and showers</li>
+                                    <li>Wiping down cabinets and fixtures</li>
+                                    <li>Cleaning inside microwave</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional FAQ items... -->
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">How often should I have my lawn mowed?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content hidden p-4">
+                        <p>The frequency of lawn mowing depends on the season and grass type. Generally, during the growing season (spring and summer), once a week is recommended. In fall and winter, every 2-3 weeks may be sufficient.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">What's included in a standard home cleaning service?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content hidden p-4">
+                        <p>Our standard home cleaning service includes dusting, vacuuming, mopping, bathroom cleaning, kitchen cleaning, and general tidying. We can customize the service based on your specific needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">How long does a landscaping design project typically take?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content hidden p-4">
+                        <p>The duration of a landscaping design project varies depending on the size and complexity of the project. Small projects may take 2-4 weeks, while larger projects can take several months from design to implementation.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 cursor-pointer faq-header flex justify-between items-center">
+                        <h3 class="text-xl font-semibold">Are your cleaning products eco-friendly?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-content hidden p-4">
+                        <p>Yes, we use eco-friendly cleaning products that are safe for your family and pets. If you have specific preferences or sensitivities, please let us know, and we'll accommodate your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label for="contactName" class="block mb-1">Name:</label>
+                            <input type="text" id="contactName" name="contactName" required class="w-full p-2 border rounded">
+                        </div>
+                        <div>
+                            <label for="contactEmail" class="block mb-1">Email:</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required class="w-full p-2 border rounded">
+                        </div>
+                        <div>
+                            <label for="contactPhone" class="block mb-1">Phone:</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" class="w-full p-2 border  rounded">
+                        </div>
+                        <div>
+                            <label for="contactService" class="block mb-1">Service Interested In:</label>
+                            <select id="contactService" name="contactService" required class="w-full p-2 border rounded">
+                                <option value="">Select a service</option>
+                                <option value="lawn-care">Lawn Care</option>
+                                <option value="landscaping">Landscaping Design</option>
+                                <option value="irrigation">Irrigation System Installation</option>
+                                <option value="home-cleaning">Home Cleaning</option>
+                                <option value="steam-cleaning">Steam Cleaning</option>
+                                <option value="move-in-out">Move In/Move Out Cleaning</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="contactMessage" class="block mb-1">Message:</label>
+                            <textarea id="contactMessage" name="contactMessage" required class="w-full p-2 border rounded" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">Send Message</button>
+                    </form>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/contact-graphic-NXNXWdHCXBDxhzTLBXbKGHXTLXTQzR.svg" alt="Contact Us" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="hover:text-green-300">Services</a></li>
+                        <li><a href="#reviews" class="hover:text-green-300">Reviews</a></li>
+                        <li><a href="#faq" class="hover:text-green-300">FAQ</a></li>
+                        <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-300"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Our Partners</h3>
+                    <div class="flex space-x-4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/partner-logo-1-NXNXWdHCXBDxhzTLBXbKGHXTLXTQzR.png" alt="Partner 1" class="h-12">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/partner-logo-2-NXNXWdHCXBDxhzTLBXbKGHXTLXTQzR.png" alt="Partner 2" class="h-12">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; 2024 GreenClean Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Toggle service content
+            $('.service-header').click(function() {
+                $(this).find('i').toggleClass('rotate-180');
+                $(this).next('.service-content').toggleClass('active');
+            });
+
+            // Toggle FAQ content
+            $('.faq-header').click(function() {
+                $(this).find('i').toggleClass('rotate-45');
+                $(this).next('.faq-content').toggleClass('active');
+            });
+
+            // Smooth scrolling for navigation links
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 100
+                    }, 1000);
+                }
+            });
+
+            // Review form submission
+            $('#reviewForm').submit(function(e) {
+                e.preventDefault();
+                // Here you would typically send the data to a server
+                alert('Thank you for your review!');
+                this.reset();
+            });
+
+            // Contact form submission
+            $('#contactForm').submit(function(e) {
+                e.preventDefault();
+                var email = $('#contactEmail').val();
+                var subject = 'New inquiry from ' + $('#contactName').val();
+                var body = 'Service: ' + $('#contactService').val() + '%0D%0A' +
+                           'Message: ' + $('#contactMessage').val() + '%0D%0A' +
+                           'Phone: ' + $('#contactPhone').val();
+                window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
+            });
+        });
+    </script>
+</body>
+</html>
